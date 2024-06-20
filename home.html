@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="icon" href="images/LOGO web.png" type="image/png">
+  <title>Rohith Kumar's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/984f65cd87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!------------------cursor------------------->
+    <div class="cursor"></div>
+
+    <!------------------header------------------->
+    <div class="wrapper">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/LOGO website crop.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact-details" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="header-text">
+                <p>Hi , Myself</p>
+                <h1>Rohith<br></h1><p><span id="typewriter"></span><span id="type-mark">|</span></p>
+                <p class="short">living in Coimbatore, focused on creating equitable and sustainable experienced products.</p>
+            </div>
+            <a href="#">
+                <div id="resume">
+                    <p id="CV">Download CV</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-------------------about------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there! I'm Rohith, as a UI/UX designer with a focus on user-centered design thinking and accessibity. 
+                        I like to solve problems and design solutions which leave an impact on lives of people. "Design is Intelligence 
+                        made visible".</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI / UX Design</span><br>Designing Web / App Interfaces</li>
+                            <li><span>HTML5 & CSS3</span><br>Responsive FrontEnd Development</li>
+                            <li><span>Java Programming</span><br>Solving Coding Challenges</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Full Stack Developer</span><br>Internship at Kaashiv Infotech</li>
+                            <li><span>UI / UX Designer</span><br>Internship at Eazybyts Infotech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BE - CSE <span style="color: #ffb4a0;">[2021-Present]</span></span><br>Dr.N.G.P.Institute of Technology<br>Percentage : 7.62</li>
+                            <li><span>UX Design Certificate <span style="color: #ffb4a0;">[2023-2024]</span></span><br>Google-Coursera</li>
+                            <li><span>High School <span style="color: #ffb4a0;">[2020-2021]</span></span><br>G.K.D.Matric Higher Secondary School<br>Percentage : 91.4%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Services--------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        <ul>
+                            <li>Tools familiar : Figma, Adobe XD</li>
+                            <li>UI : Equity-Focused Design,<br>Human-Centered Design, etc...</li>
+                            <li>UX : User Interviews, Competitive Audits, Journey Mapping, etc...</li>
+                        </ul>
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/User_experience_design" target="_blank">UI/UX Designing ?</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FrontEnd Dev</h2>
+                    <p>
+                        <ul>
+                            <li>Tools familiar : Visual Studio Code</li>
+                            <li>Languages familiar : HTML5, CSS3, JavaScript</li>
+                            <li>Responsive Website development for different screen sizes</li>
+                        </ul>
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank">FrontEnd Development ?</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h2>Photoshop</h2>
+                    <p>
+                        <ul>
+                            <li>Adobe Photoshop is a raster graphics editor developed and published by Adobe for Windows and macOS</li>
+                            <li>Edit images in a fast and efficient environment</li>
+                        </ul>
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank">Adobe Photoshop ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list-row1">
+                <div class="work">
+                    <img src="images/IRCTC.png" >
+                    <div class="layer">
+                        <h3>IRCTC Website <br>[Re-Designed]</h3>
+                        <p>Unlock the great travelling experience and user friendly website experience.</p>
+                        <a href="https://www.behance.net/gallery/201368375/IRCTC-App-Re-Design" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" >
+                    <div class="layer">
+                        <h3>Homate</h3>
+                        <p>Makes human life easier by connecting all the household appliances.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list-row2">
+                <div class="work">
+                    <img src="images/work3.png" >
+                    <div class="layer">
+                        <h3>Agric</h3>
+                        <p>Helps farmers connecting all IOT devices and other devices used in Agriculture.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Website.png" >
+                    <div class="layer">
+                        <h3>Rxhith Portfolio Website</h3>
+                        <p>Responsive Website with many interaction designs and details.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------contact--------------------->
+    <div id="contact-details">
+        <div class="container">
+            <h1 class="sub-title">Get In Touch</h1>
+            <p id="footer-msg">I'd love to build something <br>great with you, <span>Let's connect.</span></p>
+            <div class="socialmedia">
+                <a href="mailto:rohithkumarg38@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/rohith-kumar-80060a27a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://dribbble.com/RxhithDribbble" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="https://medium.com/@rohithkumarg38" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://www.instagram.com/_rxhith_._/?utm_source=qr&igsh=NzZnbWE2NnNjeGdy" target="_blank"><i class="fa-brands fa-instagram"></i></a>    
+            </div>
+        </div>
+    </div>
+    <!-------------------footer-------------------->
+    <div class="footer-text">
+        <div class="container">
+            <p>Copyright &copy; Rohith 2024 <br>Developed by <a href="https://github.com/RxhithGit" target="_blank">rxhith</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
