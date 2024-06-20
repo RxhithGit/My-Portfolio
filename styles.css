@@ -370,6 +370,9 @@ a{
     border-radius: 50%;
     text-align: center;
 }
+.layer span{
+    color: rgb(42, 255, 84);
+}
 .work:hover img{
     transform: scale(1.1);
 }
