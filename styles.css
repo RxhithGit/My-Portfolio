@@ -445,6 +445,7 @@ nav .fa-solid{
     }
     #resume{
         padding: 8px;
+        padding-top: 6px;
         width: 120px;
         margin-top:20px;
     }
