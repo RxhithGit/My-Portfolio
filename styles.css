@@ -181,14 +181,17 @@ a{
     border-color: #38B6FF;
     border-radius: 30px;
     transition: background 0.5s, transform 0.5s;
-}
-#CV{
     padding: 16px;
     width: 200px;
+}
+#CV{
+    color: #fff;
 }
 #resume:hover{
     background-color: #38B6FF;
     transform: translateY(-5px);
+}
+#CV:hover{
     color: black;
 }
 @media(max-width:1200px) {
