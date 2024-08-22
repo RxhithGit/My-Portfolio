@@ -15,6 +15,32 @@ html{
     src:url(fonts/JosefinSans-VariableFont_wght.ttf);
     font-family: JosefinSans;
 }
+/*------------- back to top ---------- */
+#progress{
+    background-color: #38B6FF;
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    height: 65px;
+    width: 65px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1;
+}
+#progress-value{
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: #000;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+}
+
 /*--------------cursor---------------*/
 .cursor{
     width: 26px;
@@ -81,7 +107,7 @@ html{
 }
 /* ------------wrapper--------------- */
 .wrapper{
-    height: 100vh;
+    /* height: 100dvh; */
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
@@ -90,7 +116,7 @@ html{
 body{
     background-color: black;
     color: #fff;
-    height: 100vh;
+    /* height: 100dvh; */
 }
 /*-------------header---------------*/
 #header{
@@ -470,6 +496,17 @@ nav .fa-solid{
     .socialmedia i{
         margin-right: 30px;
     }
+    #progress{
+        bottom: 30px;
+        right: 40px;
+        height: 55px;
+        width: 55px;
+    }
+    #progress-value{
+        height: calc(100% - 9px);
+        width: calc(100% - 9px);
+        font-size: 20px;
+    }
 }
 @media (max-width: 1400px){
     .cursor{
@@ -507,10 +544,10 @@ nav .fa-solid{
         font-size: 20px;
     }
     .layer{
-        font-size: 18px;
+        font-size: 16px;
     }
     .layer a{
-        font-size: 28px;
+        font-size: 26px;
     }
     #footer-msg{
         font-size: 42px;
@@ -523,6 +560,17 @@ nav .fa-solid{
     }
     .socialmedia i{
         margin-right: 40px;
+    }
+    #progress{
+        bottom: 30px;
+        right: 40px;
+        height: 65px;
+        width: 65px;
+    }
+    #progress-value{
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        font-size: 25px;
     }
 }
 @media(max-width: 850px) and (min-height: 700px){
@@ -698,6 +746,17 @@ nav .fa-solid{
         padding-top: 20px;
         padding-bottom: 25px;
     }
+    #progress{
+        bottom: 30px;
+        right: 30px;
+        height: 55px;
+        width: 55px;
+    }
+    #progress-value{
+        height: calc(100% - 9px);
+        width: calc(100% - 9px);
+        font-size: 20px;
+    }
 }
 @media (max-width: 320px) and (max-height: 580px){
     .logo{
@@ -760,6 +819,5 @@ nav .fa-solid{
         font-size: 10px;
     }
 }
-
 
 
