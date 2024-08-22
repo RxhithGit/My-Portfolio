@@ -30,8 +30,6 @@ let curPhraseIndex = 0;
 const writeLoop = async () => {
     while (true){
         let curWord = phrases[curPhraseIndex];
-        // console.lo(curWord);
-        // await sleep(1000);
         for (let i = 0; i < curWord.length; i++){
             el.innerText = curWord.substring(0, i+1);
             await sleep(sleepTime);
@@ -82,6 +80,29 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = "-250px";
 }
+
+
+//back to top
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    console.log(scrollValue);
+    if(pos > 100){
+        scrollProgress.style.display = "grid";
+    }else{
+        scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+    scrollProgress.style.background = `conic-gradient(#38B6FF ${scrollValue}%, #00000000 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
 
 
 
