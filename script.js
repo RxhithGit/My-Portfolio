@@ -20,7 +20,7 @@ function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
         
-const phrases = ["UI/UX Designer", "FrontEnd Developer"];
+const phrases = ["Software Tester", "UI/UX Designer", "FrontEnd Developer"];
 const el = document.getElementById("typewriter");
         
 let sleepTime = 200;
@@ -103,6 +103,7 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
 
 
 
